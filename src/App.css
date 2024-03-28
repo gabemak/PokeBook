@@ -1,47 +1,238 @@
-h1,
-h2 {
-  text-align: center;
-}
-
-
-
-
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.WelcomeSection {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  background-color: #DEBD39;
+}
+
+.wrapperten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.wrapperten h1 {
+  color: white;
+  margin: 4rem auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.wrapper .ten {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bounce {
+  font-size: 5rem;
+  width: 100%;
+  margin: 3rem auto;
+  display: inline-flex;
+  justify-content: center;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+}
+
+.bounce span {
+  display: inline-flex;
+  color: #c7f4ff;
+  font-family: "Play", sans-serif;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-20px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ten span:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+
+.ten span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.ten span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+
+.ten span:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+
+.ten span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+
+.ten span:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+
+.ten span:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+
+.ten span:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+
+.TitleSection {
+  background-color: #8B6A00;
+  color: white;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection h1,
+h5 {
+  margin: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 50s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
 
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translate(-100%, 0);
   }
+}
+
+.TitleSection input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.TitleSection button {
+  width: 180px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  border: none;
+  background-color: #FFE683;
+  color: black;
+}
+
+.TitleSection button:hover {
+  cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #b99f38;
+}
+
+.DisplaySection h3 {
+  margin: 5px;
+}
+
+.DisplaySection img {
+  margin: auto 0;
+  width: 200px;
+}
+
+.ResultCardBackground {
+  border-radius: 10px;
+  background: linear-gradient(110deg, #FDBB2D 0%, #3A1C71 100%);
+  box-shadow: 0px 5px 20px -10px #3A1C71;
+}
+
+.ResultCardTop {
+  background-color: #420e30;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ResultCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  height: auto;
+  border: solid black;
+  border-radius: 10px;
+  background-color: #C08A53;
+}
+
+.ResultLine {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.DisplaySectionImgLeft img {
+  width: 400px;
+}
+
+.DisplaySectionImgRight img {
+  width: 400px;
+}
+
+.StrongestPokemons {
+  width: 100%;
+  height: auto;
+  background-color: #8B6A00;
 }
