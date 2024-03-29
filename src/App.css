@@ -7,8 +7,18 @@
 }
 
 body {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+}
+
+.WelcomeImageLeft img {
+  width: 165px;
+  height: auto;
+}
+
+.WelcomeImageRight img {
+  width: 140px;
+  height: auto;
 }
 
 .WelcomeSection {
@@ -124,6 +134,7 @@ h5 {
 
 .marquee {
   margin: 0 auto;
+  width: 800px;
   white-space: nowrap;
   overflow: hidden;
 }

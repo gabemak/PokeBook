@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { useState } from 'react';
 import Axios from 'axios';
+import BlackFoxImage from './images/blackfox.png'
+import MewImage from './images/mew.png'
 
 function App() {
 
@@ -37,8 +39,10 @@ function App() {
   return (
     <>
       <div className='App'>
-
         <div className='WelcomeSection'>
+          <div className='WelcomeImageLeft'>
+            <img src={BlackFoxImage} alt="Black fox image"></img>
+          </div>
           <div className="wrapper">
             <div className="wrapperten">
               <div>
@@ -58,6 +62,9 @@ function App() {
               </div>
             </div>
           </div>
+          <div className='WelcomeImageRight'>
+            <img src={MewImage} alt="Mew image"></img>
+          </div>
         </div>
 
         <div className='TitleSection'>
@@ -66,8 +73,9 @@ function App() {
           <button onClick={searchPokemon}>Search Pokemon</button>
           <h5>Please type the name of a Pokemon and click on "Search Pokemon" button</h5>
           <div>
-            <p className="marquee"><span>Pokemons to search: bulbasaur - charmander - pikachu - mew - butterfree - pidgeot - nidorino - wigglytuff - venomoth - poliwag - tentacool - slowbro - doduo - onix - and so much more :-D</span></p>
+            <p className="marquee"><span>Pokemon hints to search: bulbasaur - charmander - pikachu - mew - butterfree - pidgeot - nidorino - wigglytuff - venomoth - poliwag - tentacool - slowbro - doduo - onix - and so much more :-D</span></p>
           </div>
+          <button>Full Pokemon list</button>
         </div>
 
         <div className='DisplaySection'>
