@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Axios from 'axios';
 import BlackFoxImage from '../images/blackfox.png'
 import MewImage from '../images/mew.png'
+import Card from '../components/PokemonCard'
 
 export default function Home() {
 
@@ -84,18 +85,7 @@ export default function Home() {
                             <div className='DisplaySectionImgLeft'>
                                 <img src={pokemon.img1} />
                             </div>
-                            <div className='ResultCardBackground'>
-                                <div className='ResultCard'>
-                                    <div className='ResultCardTop'>
-                                        <img src={pokemon.img} />
-                                    </div>
-                                    <h3>Species: {pokemon.species}</h3>
-                                    <h3>Type: {pokemon.type}</h3>
-                                    <h3>HP: {pokemon.hp}</h3>
-                                    <h3>Attack: {pokemon.attack}</h3>
-                                    <h3>Defense: {pokemon.defense}</h3>
-                                </div>
-                            </div>
+                            <Card pokemon={pokemon} />
                             <div className='DisplaySectionImgRight'>
                                 <img src={pokemon.img2} />
                             </div>
